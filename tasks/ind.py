@@ -9,7 +9,6 @@ def brackets_check(s):
                 s = s.replace(char, '')
         for bracket in brackets:
             s = s.replace(bracket, '')
-        print(s)
         if s and all([bracket not in s for bracket in brackets]):
             return False
 
